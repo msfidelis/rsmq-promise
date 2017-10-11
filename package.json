@@ -1,0 +1,32 @@
+{
+  "name": "rsmq-promise",
+  "version": "1.0.0",
+  "description": "Simple Promise Interface for rsmq",
+  "main": "index.js",
+  "dependencies": {
+    "bluebird": "^3.5.1",
+    "rsmq": "^0.8.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/msfidelis/rsmq-promise.git"
+  },
+  "keywords": [
+    "rsmq",
+    "redis",
+    "cache",
+    "queue",
+    "mq",
+    "tcp"
+  ],
+  "author": "Matheus Fidelis <msfidelis01@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/msfidelis/rsmq-promise/issues"
+  },
+  "homepage": "https://github.com/msfidelis/rsmq-promise#readme"
+}
