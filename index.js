@@ -17,6 +17,10 @@ class RedisSMQPromise {
         return Promise.promisify(this.rsmq.createQueue);
     }
 
+    get setQueueAttributes() {
+        return Promise.promisify(this.rsmq.setQueueAttributes);
+    }
+
     get deleteQueue() {
         return Promise.promisify(this.rsmq.deleteQueue);
     }
