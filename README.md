@@ -1,5 +1,20 @@
-# rsmq-promise
-Promise base for RSMQ - https://github.com/smrchy/rsmq 
+# rsmq-promise - Promise interface for RSMQ 
+
+> https://github.com/smrchy/rsmq 
+
+A lightweight message queue for Node.js that requires no dedicated queue server. Just a Redis server.
+
+![RSMQ: Redis Simple Message Queue for Node.js](https://img.webmart.de/rsmq_wide.png)
+
+## Usage
+
+* After creating a queue you can send messages to that queue.
+* The messages will be handled in a **FIFO** (first in first out) manner unless specified with a delay.
+* Every message has a unique `id` that you can use to delete the message. 
+* The `sendMessage` method will return the `id` for a sent message.
+* The `receiveMessage` method will return an `id` along with the message and some stats.
+* Should you not delete the message it will be eligible to be received again after the visibility timeout is reached.
+* Please have a look at the `createQueue` and `receiveMessage` methods described below for optional parameters like **visibility timeout** and **delay**.
 
 ## Install
 
