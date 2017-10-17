@@ -1,6 +1,6 @@
 # rsmq-promise - Promise interface for RSMQ 
 
-> https://github.com/smrchy/rsmq 
+[![npm version](https://badge.fury.io/js/rsmq-promise.svg)](https://badge.fury.io/js/rsmq-promise)
 
 A lightweight message queue for Node.js that requires no dedicated queue server. Just a Redis server.
 
