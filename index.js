@@ -7,23 +7,27 @@ class RedisSMQPromise {
 
     constructor(options) {
         this.rsmq = new RedisSMQ(options);
-    }
+    };
 
     get listQueues() {
         return Promise.promisify(this.rsmq.listQueues);
-    }
+    };
 
     get createQueue() {
         return Promise.promisify(this.rsmq.createQueue);
-    }
+    };
 
     get setQueueAttributes() {
         return Promise.promisify(this.rsmq.setQueueAttributes);
-    }
+    };
+    
+    get getQueueAttributes() {
+        return Promise.promisify(this.rsmq.getQueueAttributes);
+    };
 
     get deleteQueue() {
         return Promise.promisify(this.rsmq.deleteQueue);
-    }
+    };
 
     get sendMessage() {
         return Promise.promisify(this.rsmq.sendMessage);
@@ -35,6 +39,10 @@ class RedisSMQPromise {
 
     get deleteMessage() {
         return Promise.promisify(this.rsmq.deleteMessage);
+    };
+    
+    get popMessage() {
+        return Promise.promisify(this.rsmq.popMessage);
     };
 }
 
