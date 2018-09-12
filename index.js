@@ -44,7 +44,10 @@ class RedisSMQPromise {
     get popMessage() {
         return Promise.promisify(this.rsmq.popMessage);
     };
-}
 
+    get quit() {
+        return Promise.promisify(this.rsmq.quit);
+    }; 
+}
 
 module.exports = RedisSMQPromise;
