@@ -79,6 +79,8 @@ rsmq.listQueues()
 rsmq.quit()
     .then(success => console.log(success))
     .catch(err => console.log(err));
+```
+
 
 Thanks for: [Patrick Liess](https://github.com/smrchy)
 
