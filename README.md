@@ -73,6 +73,13 @@ rsmq.listQueues()
     .catch(err => console.log(err));
 ```
 
+## Quit Connection
+
+```javascript
+rsmq.quit()
+    .then(success => console.log(success))
+    .catch(err => console.log(err));
+
 Thanks for: [Patrick Liess](https://github.com/smrchy)
 
 More info: https://github.com/smrchy/rsmq
