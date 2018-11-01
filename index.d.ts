@@ -4,7 +4,9 @@ export = RSMQPromise;
 
 declare class RSMQPromise {
     constructor(options: RedisSMQ.ConstructorOptions);
-
+    
+    rsmq: RedisSMQ;
+    
 	quit(): Promise<void>;
 
 	createQueue(opts: RedisSMQ.CreateQueueOptions): Promise<1>;
