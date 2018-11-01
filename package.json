@@ -5,7 +5,7 @@
   "main": "index.js",
   "dependencies": {
     "bluebird": "^3.5.1",
-    "rsmq": "^0.8.2"
+    "rsmq": "^0.8.5"
   },
   "devDependencies": {},
   "scripts": {
