@@ -4,8 +4,8 @@
   "description": "Simple Promise Interface for rsmq",
   "main": "index.js",
   "dependencies": {
-    "bluebird": "^3.5.1",
-    "rsmq": "^0.8.2"
+    "bluebird": "^3.5.3",
+    "rsmq": "^0.9.3"
   },
   "devDependencies": {},
   "scripts": {

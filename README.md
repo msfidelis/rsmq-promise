@@ -33,6 +33,15 @@ const rsmq = new RSMQPromise({
 });
 ```
 
+Parameters for RedisSMQ via an *options* object:
+
+* `host` (String): *optional (Default: "127.0.0.1")* The Redis server
+* `port` (Number): *optional (Default: 6379)* The Redis port
+* `options` (Object): *optional (Default: {})* The [Redis options](https://github.com/NodeRedis/node_redis#options-object-properties) object. 
+* `client` (RedisClient): *optional* A existing redis client instance. `host` and `server` will be ignored.
+* `ns` (String): *optional (Default: "rsmq")* The namespace prefix used for all keys created by RSMQ
+* `realtime` (Boolean): *optional (Default: false)* Enable realtime PUBLISH of new messages (see the [Realtime section](#realtime))
+
 ## Create a Queue
 
 ```javascript
