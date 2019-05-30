@@ -13,6 +13,10 @@ class RedisSMQPromise {
         return Promise.promisify(this.rsmq.listQueues);
     };
 
+    get changeMessageVisibility() {
+        return Promise.promisify(this.rsmq.changeMessageVisibility);
+    };
+
     get createQueue() {
         return Promise.promisify(this.rsmq.createQueue);
     };
