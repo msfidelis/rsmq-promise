@@ -1,6 +1,6 @@
 {
   "name": "rsmq-promise",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Simple Promise Interface for rsmq",
   "main": "index.js",
   "dependencies": {
